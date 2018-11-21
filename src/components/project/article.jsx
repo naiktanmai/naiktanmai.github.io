@@ -8,7 +8,7 @@ const Article = props => {
 
   return (
     <article>
-      <ArticleHeader text={headerText} />
+      <ArticleHeader {...headerText} />
       <ArticleContent text={contentText} />
       <ArticleFooter moreInfoLink={moreInfoLink} />
     </article>

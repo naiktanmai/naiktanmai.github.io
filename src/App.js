@@ -28,23 +28,32 @@ class App extends Component {
       {
         key: 0,
         contentText:
-          "Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, <br/> magna a ullamcorper laoreet, lectus arcu.",
+          "American Water Resources covers repairs to most of the major systems usually not covered by your homeowners insurance.",
         moreInfoLink: "",
-        headerText: "Interdum lorem pulvinar<br /> adipiscing vitae"
+        headerText: {
+          header: "awrusa.com",
+          description: "Ecommerce for coverages"
+        }
       },
       {
         key: 1,
         contentText:
           "Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, <br/> magna a ullamcorper laoreet, lectus arcu.",
         moreInfoLink: "",
-        headerText: "Interdum lorem pulvinar<br /> adipiscing vitae"
+        headerText: {
+          header: "awrusa.com",
+          description: "Ecommerce for coverages"
+        }
       },
       {
         key: 2,
         contentText:
           "Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, <br/> magna a ullamcorper laoreet, lectus arcu.",
         moreInfoLink: "",
-        headerText: "Interdum lorem pulvinar<br /> adipiscing vitae"
+        headerText: {
+          header: "awrusa.com",
+          description: "Ecommerce for coverages"
+        }
       }
     ],
     technologies: [

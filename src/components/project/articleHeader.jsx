@@ -1,10 +1,10 @@
 import React from "react";
 
 const ArticleHeader = props => {
-  const { text } = props;
+  const { header, description } = props;
   return (
     <header>
-      <h3>{text}</h3>
+      <h3>{header}</h3> <h4>{description}</h4>
     </header>
   );
 };
