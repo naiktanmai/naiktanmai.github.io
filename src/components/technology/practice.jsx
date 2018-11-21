@@ -1,7 +1,7 @@
 import React from "react";
 
 const Practice = props => {
-  const { icon, name, description } = props;
+  const { icon, name } = props;
 
   return (
     <div className="box person">

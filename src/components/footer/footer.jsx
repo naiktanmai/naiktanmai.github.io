@@ -1,26 +1,46 @@
-import React from "react";
+import React, { Component } from "react";
 import Link from "./link";
 
-const Footer = props => {
-  const { links } = props;
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      links: []
+    };
+  }
 
-  return (
-    <footer id="footer">
-      <div className="inner">
-        <div className="flex">
-          <div className="copyright">
-            &copy; https://templated.co/theory. Images:{" "}
-            <a href="https://unsplash.com">Unsplash</a>.
+  componentDidMount() {
+    this.fetchFooterLinks().then(data => {
+      this.setState({ links: data });
+    });
+  }
+
+  fetchFooterLinks = async () => {
+    let footer = await fetch(
+      "https://profile-tanmai.firebaseio.com/footer.json"
+    );
+    return footer.json();
+  };
+
+  render() {
+    return (
+      <footer id="footer">
+        <div className="inner">
+          <div className="flex">
+            <div className="copyright">
+              &copy; https://templated.co/theory. Images:{" "}
+              <a href="https://unsplash.com">Unsplash</a>.
+            </div>
+            <ul className="icons">
+              {this.state.links.map(link => {
+                return <Link {...link} />;
+              })}
+            </ul>
           </div>
-          <ul className="icons">
-            {links.map(link => {
-              return <Link {...link} />;
-            })}
-          </ul>
         </div>
-      </div>
-    </footer>
-  );
-};
+      </footer>
+    );
+  }
+}
 
 export default Footer;

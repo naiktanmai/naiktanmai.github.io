@@ -55,89 +55,6 @@ class App extends Component {
           description: "Ecommerce for coverages"
         }
       }
-    ],
-    technologies: [
-      {
-        key: 0,
-        icon: "devicon-nodejs-plain colored",
-        name: "Node.js"
-      },
-      {
-        key: 1,
-        icon: "devicon-go-plain colored",
-        name: "Go lang"
-      },
-      {
-        key: 2,
-        icon: "devicon-python-plain colored",
-        name: "Python",
-        description: "Python"
-      },
-      {
-        key: 3,
-        icon: "devicon-react-original colored",
-        name: "React.js"
-      },
-      {
-        key: 4,
-        icon: "devicon-mongodb-plain colored",
-        name: "MongoDB"
-      },
-      {
-        key: 5,
-        icon: "devicon-postgresql-plain colored",
-        name: "Postgresql"
-      },
-      {
-        key: 6,
-        icon: "devicon-docker-plain colored",
-        name: "Docker"
-      },
-      {
-        key: 7,
-        icon: "devicon-redis-plain colored",
-        name: "Redis"
-      },
-      {
-        key: 8,
-        icon: "devicon-mysql-plain colored",
-        name: "SQL"
-      },
-      {
-        key: 9,
-        icon: "devicon-git-plain colored",
-        name: "Git"
-      },
-      {
-        key: 10,
-        icon: "devicon-nginx-original colored",
-        name: "Nginx"
-      },
-      {
-        key: 11,
-        icon: "devicon-javascript-plain colored",
-        name: "Javascript"
-      }
-    ],
-    footer: [
-      {
-        key: 0,
-        icon: "fa-twitter",
-        text: "Twitter",
-        link: "https://twitter.com/tanthedestroyer"
-      },
-      {
-        key: 1,
-        icon: "fa-github",
-        text: "Github",
-        link: "https://github.com/naiktanmai"
-      },
-      {
-        key: 2,
-        icon: "fa-linkedin",
-        text: "linkedIn",
-        link: "https://www.linkedin.com/in/tanmai-naik-06376454/"
-      }
     ]
   };
 
@@ -147,8 +64,8 @@ class App extends Component {
         <Header links={this.state.links} />
         <Banner />
         <Project projects={this.state.projects} />
-        <Technology technologies={this.state.technologies} />
-        <Footer links={this.state.footer} />
+        <Technology />
+        <Footer />
       </React.Fragment>
     );
   }
